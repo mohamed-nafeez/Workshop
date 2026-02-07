@@ -1,0 +1,59 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "name": "Files & Navigation (mkdir, touch, echo, pwd, ls)",
+      "clue": "Create directory 'lab1', create file lab1/start.txt, and write 'begin' into it.",
+      "answers": [],
+      "rewards": 8,
+      "token": "L1KEY",
+      "hints": ["Create a directory with mkdir. Use touch to create files. Use echo with > to write."],
+      "hint_cost": 2,
+      "randomizable": false
+    },
+    {
+      "id": 2,
+      "name": "Copy & Move (cp, mv, rm)",
+      "clue": "Copy lab1/start.txt to lab1/copy.txt, rename to lab1/moved.txt, and remove lab1/start.txt.",
+      "answers": [],
+      "rewards": 10,
+      "token": "L2NUM",
+      "hints": ["Use cp to copy, mv to rename/move, rm to remove files."],
+      "hint_cost": 3,
+      "randomizable": false
+    },
+    {
+      "id": 3,
+      "name": "Viewing & Searching (cat, tail, grep, find, pipes)",
+      "clue": "Create messages.txt containing the word 'secret' on a line, then grep that line.",
+      "answers": [],
+      "rewards": 12,
+      "token": "L3CIP",
+      "hints": ["Use grep to search text. Pipes | and > redirects are allowed. Use find to locate files."],
+      "hint_cost": 4,
+      "randomizable": false
+    },
+    {
+      "id": 4,
+      "name": "Links & Disk (ln, du, df)",
+      "clue": "Create symlink lab1/link_to_moved -> lab1/moved.txt and run du -h lab1.",
+      "answers": [],
+      "rewards": 15,
+      "token": "L4MAP",
+      "hints": ["Create symbolic links with ln -s. Check sizes with du -h and filesystem with df -h."],
+      "hint_cost": 5,
+      "randomizable": false
+    },
+    {
+      "id": 5,
+      "name": "Compress & Find (zip/unzip/find)",
+      "clue": "Zip the lab1 directory into lab1.zip, remove lab1, and list files inside the zip.",
+      "answers": [],
+      "rewards": 25,
+      "token": "L5VAULT",
+      "hints": ["Use zip -r to create an archive, unzip -l to list its contents, find to search files."],
+      "hint_cost": 6,
+      "randomizable": false
+    }
+  ]
+}
